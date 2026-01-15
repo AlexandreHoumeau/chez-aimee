@@ -1,7 +1,13 @@
-export default function Home() {
+import HeroSection from '@/components/HeroSection'
+import { PinkSection } from '@/components/PinkSection'
+import { WaveSeparator } from '@/components/WaveSeparator'
+
+export default function Page() {
   return (
-    <main className="min-h-screen">
-      <h1 className="text-3xl font-semibold">Chez aimée</h1>
-    </main>
-  );
+    <>
+      <HeroSection />
+      <WaveSeparator />
+      <PinkSection />
+    </>
+  )
 }
