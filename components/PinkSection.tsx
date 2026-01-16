@@ -1,17 +1,32 @@
-export function PinkSection() {
-  return (
-    <section className="relative bg-pink -mt-1 min-h-screen">
-      {/* Content offset to clear wave */}
-      {/* <div className="max-w-5xl mx-auto px-6 pt-28 pb-32">
-        <h2 className="font-display text-3xl mb-6">
-          Prestations
-        </h2>
+// components/PinkSection.tsx
+import { SERVICES } from '@/utils/general'
+import { NailsCarousel } from './NailsCarousel'
+import { Button } from './Button'
 
-        <p>
-          Découvrez l’ensemble des prestations proposées, adaptées à
-          vos envies et à votre style.
-        </p>
-      </div> */}
-    </section>
-  )
+export function PinkSection() {
+    return (
+        <section className="relative bg-pink pb-10 overflow-hidden z-30">
+            <NailsCarousel />
+
+            <div className="py-10">
+                <div className="mx-auto px-16 text-white">
+                    <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+                        {SERVICES.map((service, index) => (
+                            <div key={index} className="text-left">
+                                <h3 className="mb-4 font-display text-lg font-semibold">{service.title}</h3>
+                                <p className="text-base leading-relaxed">{service.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="mt-10 text-center space-y-10">
+                        <p className="text-base text-center font-semibold leading-relaxed">Toutes les créations sont réalisées à la main et personnalisées selon vos envies.</p>
+                        <Button textColor='primary' bgColor="background">POUR ME SUIVRE AU QUOTIDIEN</Button>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section >
+    )
 }
