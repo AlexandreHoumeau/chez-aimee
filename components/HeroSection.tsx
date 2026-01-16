@@ -6,13 +6,13 @@ export default function HeroSection() {
     return (
         <section className="relative h-[50vh] px-4 pt-16 overflow-hiddenpy-">
             {/* Decorative layer */}
-            <div aria-hidden className="absolute inset-0 pointer-events-none">
+            <div className="pointer-events-none absolute inset-0 z-10">
                 {POSITIONS.map((_, i) => (
                     <Smiley key={i} index={i} />
                 ))}
             </div>
             {/* Content */}
-            <div className="relative z-10 mx-auto max-w-3xl text-center">
+            <div className="relative z-20 mx-auto max-w-3xl text-center">
                 <Image
                     src="/small_logo.png"
                     alt="Logo"

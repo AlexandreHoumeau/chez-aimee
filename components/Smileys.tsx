@@ -40,7 +40,7 @@ export function Smiley({ index }: { index: number }) {
       src="/smiley.png"
       alt=""
       aria-hidden
-      className={`absolute lg:opacity-100 opacity-60 pointer-events-none ${widthClass}`}
+      className={`absolute lg:opacity-100 opacity-60 pointer-events-none z-0 ${widthClass}`}
       style={{
         ...pos,
         transform: `translateY(${offset}px)`,

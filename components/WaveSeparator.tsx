@@ -13,14 +13,6 @@ export function WaveSeparator() {
     useEffect(() => {
         if (!pathRef.current) return
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
-
-
-        // respect reduced motion
-        if (
-            window.matchMedia('(prefers-reduced-motion: reduce)').matches
-        ) {
-            return
-        }
         gsap.to(pathRef.current, {
             scrollTrigger: {
                 trigger: pathRef.current,
@@ -45,16 +37,19 @@ export function WaveSeparator() {
     }, [])
 
     return (
-        <svg
-            viewBox="0 0 1440 140"
-            preserveAspectRatio="none"
-            className="block w-full h-32 md:h-40 z-50 "
-        >
-            <path
-                ref={pathRef}
-                d={WAVE_1}
-                fill="var(--color-pink)"
-            />
-        </svg>
+        <div className="relative z-30">
+            <svg
+                viewBox="0 0 1440 140"
+                preserveAspectRatio="none"
+                className="block w-full h-32 md:h-40  "
+            >
+                <path
+                    className='z-50'
+                    ref={pathRef}
+                    d={WAVE_1}
+                    fill="var(--color-pink)"
+                />
+            </svg>
+        </div>
     )
 }

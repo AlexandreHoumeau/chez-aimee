@@ -4,10 +4,10 @@ import { WaveSeparator } from '@/components/WaveSeparator'
 
 export default function Page() {
   return (
-    <>
+    <main className="relative isolation-isolate">
       <HeroSection />
       <WaveSeparator />
       <PinkSection />
-    </>
+    </main  >
   )
 }
