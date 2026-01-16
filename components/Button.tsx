@@ -25,7 +25,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 {...props}
             >
                 {children}
-                {RightIcon && <RightIcon size={20} />}
+                {RightIcon && <RightIcon className={`text-${textColor} ml-2`} size={28} />}
             </button>
         );
     }

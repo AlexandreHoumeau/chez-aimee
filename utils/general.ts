@@ -4,10 +4,11 @@ export const POSITIONS = [
     { top: '14%', left: '30%', size: 'large' },
     { top: '48%', left: '12%', size: 'large' },
     { bottom: '0%', left: '8%', size: 'large' },
-    { bottom: '-10%', left: '45%', size: 'large' },
+    { bottom: '-25%', left: '35%', size: 'large' },
+    { bottom: '-15%', left: '19%', size: 'large' },
     { bottom: '-5%', right: '20%', size: 'large' },
     { top: '30%', right: '3%', size: 'large' },
-    { top: '60%', right: '2%', size: 'large' },
+    { top: '60%', right: '10%', size: 'large' },
     { top: '10%', right: '18%', size: 'large' },
     { top: '25%', right: '30%', size: 'large' },
 ]
