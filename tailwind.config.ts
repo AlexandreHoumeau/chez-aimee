@@ -7,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        carousel: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-1200px)' },
+        },
+      },
+      animation: {
+        carousel: 'carousel 60s linear infinite',
+      },
       colors: {
         background: '#FFEDCD',
         primary: '#FF6833',
