@@ -1,28 +1,37 @@
 export const POSITIONS = [
-  /* Top band */
-  { top: '22%', left: '5%', size: 'large' },
-  { top: '5%', left: '18%', size: 'large' },
-  { top: '14%', left: '30%', size: 'large' },
-  { top: '48%', left: '12%', size: 'large' },
+    { top: '22%', left: '5%', size: 'large' },
+    { top: '5%', left: '18%', size: 'large' },
+    { top: '14%', left: '30%', size: 'large' },
+    { top: '48%', left: '12%', size: 'large' },
+    { bottom: '0%', left: '8%', size: 'large' },
+    { bottom: '-10%', left: '45%', size: 'large' },
+    { bottom: '-5%', right: '20%', size: 'large' },
+    { top: '30%', right: '3%', size: 'large' },
+    { top: '60%', right: '2%', size: 'large' },
+    { top: '10%', right: '18%', size: 'large' },
+    { top: '25%', right: '30%', size: 'large' },
+]
 
-  { bottom: '0%', left: '8%', size: 'large' },
-  { bottom: '-10%', left: '45%', size: 'large' },
-//   { top: '6%', right: '18%', size: 'small' },
-//   { top: '10%', right: '6%', size: 'large' },
 
-//   /* Left band */
-//   { top: '28%', left: '4%', size: 'small' },
-//   { top: '48%', left: '2%', size: 'medium' },
-//   { bottom: '28%', left: '7%', size: 'small' },
-
-//   /* Right band */
-//   { top: '30%', right: '3%', size: 'large' },
-//   { top: '52%', right: '2%', size: 'medium' },
-//   { bottom: '30%', right: '8%', size: 'small' },
-
-//   /* Bottom band */
-//   { bottom: '8%', left: '14%', size: 'large' },
-//   { bottom: '10%', left: '40%', size: 'medium' },
-//   { bottom: '8%', right: '22%', size: 'small' },
-//   { bottom: '12%', right: '6%', size: 'large' },
+export const SERVICES = [
+    {
+        title: 'Gel X',
+        description:
+            'Pour des ongles solides, élégants et parfaitement structurés.',
+    },
+    {
+        title: 'Gainage',
+        description:
+            'Idéal pour renforcer l’ongle naturel tout en gardant un rendu fin et naturel.',
+    },
+    {
+        title: 'Semi-permanent',
+        description:
+            'Une couleur impeccable pendant plusieurs semaines, sans compromis.',
+    },
+    {
+        title: 'Nail art',
+        description:
+            'Minimaliste, coloré, tendance ou totalement personnalisé : laissez parler votre créativité (ou la mienne).',
+    },
 ]

@@ -25,3 +25,45 @@
     @apply bg-background text-primary font-sans;
   }
 }
+
+.about-grid {
+  --cell: 38px;
+  --rows: 22;
+  --pink: #FF6833;
+  --bg: var(--background);
+
+  height: calc(var(--cell) * var(--rows));
+
+  background-image:
+    linear-gradient(
+      45deg,
+      var(--pink) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--pink) 75%,
+      var(--pink)
+    ),
+    linear-gradient(
+      45deg,
+      var(--pink) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--pink) 75%,
+      var(--pink)
+    );
+
+  background-size: calc(var(--cell) * 2) calc(var(--cell) * 2);
+  background-position: 0 0, var(--cell) var(--cell);
+
+  opacity: 0.3;
+}
+
+
+@keyframes drift {
+  from { background-position: 0 0, 38px 38px; }
+  to   { background-position: 38px 0, 76px 38px; }
+}
+
+.about-grid {
+  animation: drift 60s linear infinite;
+}
