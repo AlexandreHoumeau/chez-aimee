@@ -5,14 +5,14 @@ import { Instagram } from 'lucide-react';
 
 export default function Navbar() {
     return (
-        <nav className="grid grid-cols-3 sticky  top-0 z-50 items-center px-4 sm:px-10 md:px-20 py-2 bg-primary">
+        <nav className="grid grid-cols-3 sticky  top-0 z-50 items-center px-8 sm:px-10 md:px-20 py-2 bg-primary">
             {/* Left side */}
-    
-            <div/>
+
+            <div />
             {/* Center - Logo */}
             <div className="flex-1 flex justify-center">
                 <Image
-                    src="/logo.png"
+                    src="/logo.svg"
                     alt="Logo"
                     width={120}
                     height={65}
@@ -22,9 +22,9 @@ export default function Navbar() {
             </div>
 
             {/* Right side */}
-            <div className="flex justify-end items-center gap-4 sm:gap-6 md:gap-10">
+            <div className="flex justify-end items-center gap-10">
                 <a href="#https://www.instagram.com/chezaimee_/" target="_blank" rel="noopener noreferrer">
-                    <Instagram className="text-white w-5 h-5 sm:w-6 sm:h-6 hover:opacity-80" />
+                    <Instagram className="text-white w-7 h-7 hover:opacity-80" />
                 </a>
             </div>
         </nav>
