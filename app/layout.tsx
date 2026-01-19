@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins, Rammetto_One } from 'next/font/google'
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Chez Aimée",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`bg-background antialiased ${poppins.variable} ${rammetto.variable}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
