@@ -5,7 +5,7 @@ import { Button } from './Button'
 
 export function PinkSection() {
     return (
-        <section className="relative bg-pink md:pt-0 -pt-20 pb-10 overflow-hidden z-30">
+        <section className="relative bg-pink md:pt-0 -pt-20 pb-10 overflow-hidden z-30 -mt-[2px]">
             <NailsCarousel />
 
             <div className="py-10">
