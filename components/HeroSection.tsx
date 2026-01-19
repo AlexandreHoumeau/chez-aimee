@@ -14,7 +14,7 @@ export default function HeroSection() {
             {/* Content */}
             <div className="flex justify-center z-20 relative flex-col items-center h-full text-center max-w-3xl mx-auto ">
                 <Image
-                    src="/small_logo.png"
+                    src="/small_logo.svg"
                     alt="Logo"
                     width={100}
                     height={100}
