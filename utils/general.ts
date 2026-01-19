@@ -1,16 +1,16 @@
 export const POSITIONS = [
-    { top: '22%', left: '5%', size: 'large' },
-    { top: '5%', left: '18%', size: 'large' },
-    { top: '14%', left: '30%', size: 'large' },
-    { top: '48%', left: '12%', size: 'large' },
-    { bottom: '0%', left: '8%', size: 'large' },
-    { bottom: '-25%', left: '35%', size: 'large' },
-    { bottom: '-15%', left: '19%', size: 'large' },
-    { bottom: '-5%', right: '20%', size: 'large' },
-    { top: '30%', right: '3%', size: 'large' },
-    { top: '60%', right: '10%', size: 'large' },
-    { top: '10%', right: '18%', size: 'large' },
-    { top: '25%', right: '30%', size: 'large' },
+    { top: '22%', left: '5%', size: 'large', responsive: true },
+    { top: '5%', left: '18%', size: 'large', responsive: true },
+    { top: '14%', left: '30%', size: 'large', responsive: false },
+    { top: '48%', left: '12%', size: 'large', responsive: true },
+    { bottom: '0%', left: '8%', size: 'large', responsive: true },
+    { bottom: '-25%', left: '35%', size: 'large', responsive: true },
+    { bottom: '-15%', left: '19%', size: 'large', responsive: true },
+    { bottom: '-5%', right: '20%', size: 'large', responsive: true },
+    { top: '30%', right: '3%', size: 'large', responsive: true },
+    { top: '60%', right: '10%', size: 'large', responsive: false },
+    { top: '10%', right: '18%', size: 'large', responsive: true },
+    { top: '25%', right: '30%', size: 'large', responsive: false },
 ]
 
 
