@@ -9,7 +9,7 @@ const IMAGES = [
     '/photos/nails_4.png',
 ]
 
-const OFFSETS = ['mt-0', 'mt-24', 'mt-0', 'mt-24']
+const OFFSETS = ['mt-0', 'lg:mt-24 mt-6', 'mt-0', 'lg:mt-24 mt-6']
 
 export function NailsCarousel() {
     return (
@@ -22,7 +22,7 @@ export function NailsCarousel() {
                         width={246}
                         height={246}
                         alt={`Nail design ${i % IMAGES.length + 1}`}
-                        className={`h-[246px] w-[246px] rounded-full object-cover ${OFFSETS[i % OFFSETS.length]}`}
+                        className={`lg:h-[246px] lg:w-[246px] w-[130px] h-[130px] rounded-full object-cover ${OFFSETS[i % OFFSETS.length]}`}
                     />
                 ))}
             </div>

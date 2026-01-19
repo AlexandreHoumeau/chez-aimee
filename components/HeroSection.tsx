@@ -4,7 +4,7 @@ import { POSITIONS } from "@/utils/general";
 
 export default function HeroSection() {
     return (
-        <section className="relative h-[50vh] px-4 pt-16 overflow-hiddenpy-">
+        <section className="relative md:h-[50vh] h-[70vh] px-4  overflow-hidden-">
             {/* Decorative layer */}
             <div className="pointer-events-none absolute inset-0 z-10">
                 {POSITIONS.map((_, i) => (
@@ -12,7 +12,7 @@ export default function HeroSection() {
                 ))}
             </div>
             {/* Content */}
-            <div className="relative z-20 mx-auto max-w-3xl text-center">
+            <div className="flex justify-center z-20 relative flex-col items-center h-full text-center max-w-3xl mx-auto ">
                 <Image
                     src="/small_logo.png"
                     alt="Logo"
