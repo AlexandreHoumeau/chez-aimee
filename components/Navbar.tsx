@@ -23,7 +23,7 @@ export default function Navbar() {
 
             {/* Right side */}
             <div className="flex justify-end items-center gap-10">
-                <a href="#https://www.instagram.com/chezaimee_/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/chezaimee_/" target="_blank" rel="noopener noreferrer">
                     <Instagram className="text-white w-7 h-7 hover:opacity-80" />
                 </a>
             </div>
