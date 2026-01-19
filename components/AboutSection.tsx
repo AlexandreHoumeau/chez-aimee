@@ -69,6 +69,7 @@ export function AboutSection() {
                             textColor="background"
                             rightIcon={Instagram}
                             className="w-full sm:w-auto"
+                            onClick={() => window.open("https://www.instagram.com/chezaimee_/", "_blank")}
                         >
                             RÉSERVER MON RENDEZ-VOUS
                         </Button>

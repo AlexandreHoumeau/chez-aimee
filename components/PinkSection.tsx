@@ -1,4 +1,4 @@
-// components/PinkSection.tsx
+"use client"
 import { SERVICES } from '@/utils/general'
 import { NailsCarousel } from './NailsCarousel'
 import { Button } from './Button'
@@ -20,7 +20,8 @@ export function PinkSection() {
                     </div>
                     <div className="mt-10 text-center space-y-10">
                         <p className="text-base text-center font-semibold leading-relaxed">Toutes les créations sont réalisées à la main et personnalisées selon vos envies.</p>
-                        <Button bgColor="background"><p className='text-primary'>POUR ME SUIVRE AU QUOTIDIEN</p></Button>
+                        <Button bgColor="background"><p className='text-primary' onClick={() => window.open("https://www.instagram.com/chezaimee_/", "_blank")}
+                        >POUR ME SUIVRE AU QUOTIDIEN</p></Button>
                     </div>
                 </div>
             </div>
