@@ -63,7 +63,7 @@ export function AboutSection() {
                         Pour prendre rendez-vous, ça se passe ici :
                     </p>
 
-                    <div className="mt-6 flex justify-center">
+                    <div className="mt-6 flex justify-center text-white">
                         <Button
                             bgColor="primary"
                             textColor="background"
