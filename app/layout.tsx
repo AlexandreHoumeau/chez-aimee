@@ -22,19 +22,19 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   title: {
-    default: "Salon de manucure à Bordeaux – Chez Aimée",
+    default: "Prothésiste ongulaire à Bordeaux – Chez Aimée",
     template: "%s | Chez Aimée",
   },
 
   description:
-    "Salon de manucure à Bordeaux spécialisé en gel, semi-permanent, capsule Gel X et nail art. Prenez rendez-vous en ligne.",
+    "Prothésiste ongulaire à Bordeaux spécialisé en gel, semi-permanent, capsule Gel X et nail art. Prenez rendez-vous en ligne.",
 
   openGraph: {
     type: "website",
     locale: "fr_FR",
     url: SITE_URL,
     siteName: "Chez Aimée",
-    title: "Salon de manucure à Bordeaux – Chez Aimée",
+    title: "Prothésiste ongulaire à Bordeaux – Chez Aimée",
     description:
       "Gel, semi-permanent et nail art à Bordeaux. Réservation en ligne.",
     images: [
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Salon de manucure à Bordeaux – Chez Aimée",
+        alt: "Prothésiste ongulaire à Bordeaux – Chez Aimée",
       },
     ],
   },
