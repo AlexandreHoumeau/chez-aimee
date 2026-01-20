@@ -13,12 +13,11 @@ export default function HeroSection() {
             </div>
             {/* Content */}
             <div className="flex justify-center z-20 relative flex-col items-center h-full text-center max-w-3xl mx-auto ">
-                <Image
+                <img
                     src="/small_logo.svg"
                     alt="Logo"
                     width={100}
                     height={100}
-                    unoptimized
                     className="mx-auto mb-6 w-auto"
                 />
                 <h2 className="mt-2 mb-6 text-2xl md:text-3xl xl:text-5xl font-display">

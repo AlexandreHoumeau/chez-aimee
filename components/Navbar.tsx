@@ -11,13 +11,11 @@ export default function Navbar() {
             <div />
             {/* Center - Logo */}
             <div className="flex-1 flex justify-center">
-                <Image
+                <img
                     src="/logo.svg"
                     alt="Logo"
                     width={120}
                     height={65}
-                    priority
-                    unoptimized
                     className="w-24 h-auto sm:w-28 md:w-32"
                 />
             </div>
