@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Smiley } from "./Smileys";
 import { POSITIONS } from "@/utils/general";
+import SmallLogo from "@/components/SmallLogo";
 
 export default function HeroSection() {
     return (
@@ -13,13 +14,8 @@ export default function HeroSection() {
             </div>
             {/* Content */}
             <div className="flex justify-center z-20 relative flex-col items-center h-full text-center max-w-3xl mx-auto ">
-                <img
-                    src="/small_logo.svg"
-                    alt="Chez Aimée – Salon de manucure à Bordeaux"
-                    width={96}
-                    height={96}
-                    className="mx-auto mb-6 block will-change-auto"
-                />
+                <SmallLogo className="mx-auto mb-6 h-24 w-24" />
+
                 <h2 className="mt-2 mb-6 text-2xl md:text-3xl xl:text-5xl font-display">
                     Aimée,
                 </h2>

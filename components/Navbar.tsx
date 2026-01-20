@@ -1,6 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
 import { Instagram } from 'lucide-react';
+import Logo from './Logo';
 
 
 export default function Navbar() {
@@ -11,13 +10,7 @@ export default function Navbar() {
             <div />
             {/* Center - Logo */}
             <div className="flex-1 flex justify-center">
-                <img
-                    src="/logo.svg"
-                    alt="Logo"
-                    width={120}
-                    height={65}
-                    className="w-24 h-auto sm:w-28 md:w-32"
-                />
+                <Logo className="w-24 h-auto sm:w-28 md:w-32" />
             </div>
 
             {/* Right side */}
