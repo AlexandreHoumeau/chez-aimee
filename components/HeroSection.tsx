@@ -18,6 +18,7 @@ export default function HeroSection() {
                     alt="Logo"
                     width={100}
                     height={100}
+                    unoptimized
                     className="mx-auto mb-6 w-auto"
                 />
                 <h2 className="mt-2 mb-6 text-2xl md:text-3xl xl:text-5xl font-display">

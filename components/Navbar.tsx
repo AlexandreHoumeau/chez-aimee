@@ -17,6 +17,7 @@ export default function Navbar() {
                     width={120}
                     height={65}
                     priority
+                    unoptimized
                     className="w-24 h-auto sm:w-28 md:w-32"
                 />
             </div>
