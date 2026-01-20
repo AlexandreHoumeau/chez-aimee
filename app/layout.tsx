@@ -17,7 +17,7 @@ const rammetto = Rammetto_One({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.yoursalonname.fr"),
+  metadataBase: new URL("https://chez-aimee.vercel.app"),
   title: {
     default: "Chez Aimée - Salon de manucure à Bordeaux",
     template: "%s | Chez Aimée",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://www.yoursalonname.fr",
+    url: "https://chez-aimee.vercel.app",
     siteName: "Chez Aimée",
     title: "Salon de manucure à Bordeaux",
     description:
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.yoursalonname.fr",
+    canonical: "https://chez-aimee.vercel.app",
   },
 
   robots: {
