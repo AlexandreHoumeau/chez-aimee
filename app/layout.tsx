@@ -4,11 +4,6 @@ import type { Metadata } from "next";
 import { Poppins, Rammetto_One } from 'next/font/google'
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "Chez Aimée",
-  description: "Salon de manucure et pédicure à Bordeaux",
-};
-
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -20,6 +15,53 @@ const rammetto = Rammetto_One({
   weight: '400',
   variable: '--font-rammetto',
 })
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.yoursalonname.fr"),
+  title: {
+    default: "Chez Aimée - Salon de manucure à Bordeaux",
+    template: "%s | Chez Aimée",
+  },
+
+  description:
+    "Salon de manucure à Bordeaux spécialisé en gel, semi-permanent et nail art. Prenez rendez-vous pour des ongles élégants et durables.",
+
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://www.yoursalonname.fr",
+    siteName: "Chez Aimée",
+    title: "Salon de manucure à Bordeaux",
+    description:
+      "Gel, semi-permanent et nail art à Bordeaux. Manucure professionnelle et soignée.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Salon de manucure à Bordeaux",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Salon de manucure à Bordeaux",
+    description:
+      "Manucure, gel et semi-permanent à Bordeaux. Prenez rendez-vous.",
+    images: ["/og-image.jpg"],
+  },
+
+  alternates: {
+    canonical: "https://www.yoursalonname.fr",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
+
 
 export default function RootLayout({
   children,
