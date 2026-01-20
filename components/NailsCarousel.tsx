@@ -18,12 +18,12 @@ const OFFSETS = ['mt-0', 'lg:mt-24 mt-6', 'mt-0', 'lg:mt-24 mt-6']
 
 export function NailsCarousel() {
     return (
-        <div className="relative w-full overflow-hidden">
-            <div className="carousel-track flex">
+        <div className="relative w-full md:overflow-hidden">
+            <div className="carousel-track md:gap-8 gap-4 flex">
                 {[...IMAGES, ...IMAGES, ...IMAGES].map((item, i) => (
                     <div
                         key={i}
-                        className={`relative rounded-full overflow-hidden group bg-blue-200 w-246 h-246 lg:w-[246px] lg:h-[246px] m-4 flex-shrink-0 ${OFFSETS[i % OFFSETS.length]}`}
+                        className={`relative rounded-full overflow-hidden group lg:h-[246px] lg:w-[246px] w-[130px] h-[130px] md:m-4 flex-shrink-0 ${OFFSETS[i % OFFSETS.length]}`}
                     >
                         <Image
                             key={i}
@@ -34,7 +34,7 @@ export function NailsCarousel() {
                             className={`lg:h-[246px] lg:w-[246px] w-[130px] h-[130px] rounded-full object-cover`}
                         />
 
-                        <div className=" absolute inset-0 bg-background flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="absolute inset-0 bg-background flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <p className="text-primary font-display text-center text-sm lg:text-lg font-medium px-4">
                                 {item.description}
                             </p>
@@ -46,7 +46,6 @@ export function NailsCarousel() {
             <style jsx>{`
                 .carousel-track {
                     display: flex;
-                    gap: 4rem;
                     animation: scroll-left 60s linear infinite;
                     will-change: transform;
                 }
