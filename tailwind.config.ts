@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-atelia)']
+      },
       colors: {
         background: '#FFEDCD',
         primary: '#FF6833',

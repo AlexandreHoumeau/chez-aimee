@@ -16,10 +16,10 @@ export default function HeroSection() {
             <div className="flex justify-center z-20 relative flex-col items-center h-full text-center max-w-3xl mx-auto ">
                 <SmallLogo className="mx-auto mb-6 h-24 w-24" />
 
-                <h2 className="mt-2 mb-6 text-2xl md:text-3xl xl:text-5xl font-display">
+                <h2 className="mt-2 mb-2 text-2xl md:text-3xl xl:text-5xl font-atelia">
                     Aimée,
                 </h2>
-                <h1 className="font-display text-2xl md:text-3xl xl:text-5xl leading-tight">
+                <h1 className="font-atelia text-2xl md:text-3xl xl:text-5xl leading-tight">
                     PROTHÉSISTE ONGULAIRE
                 </h1>
                 <p className="mt-4 text-sm md:text-lg leading-relaxed">

@@ -3,8 +3,15 @@ import Footer from "@/components/Footer"
 import "./globals.css"
 import type { Metadata } from "next"
 import { Poppins, Rammetto_One } from "next/font/google"
+import localFont from 'next/font/local'
 
 const SITE_URL = "https://chez-aimee.vercel.app"
+
+const atelia = localFont({
+  src: '../public/Atelia.woff2',
+  variable: '--font-atelia'
+})
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -69,7 +76,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={`bg-background antialiased ${poppins.variable} ${rammetto.variable}`}>
+      <body className={`bg-background antialiased ${poppins.variable} ${rammetto.variable} ${atelia.variable}`}>
         <Navbar />
         {children}
         <Footer />

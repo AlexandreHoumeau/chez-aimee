@@ -31,7 +31,7 @@ export function AboutSection() {
 
                 {/* Text card */}
                 <div className="p-6 sm:p-8 lg:order-2 order-1 bg-background rounded-lg flex flex-col">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display text-primary text-center mb-6">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-atelia text-primary text-center mb-6">
                         Pour en savoir plus
                     </h2>
 

@@ -35,7 +35,7 @@ export function NailsCarousel() {
                         />
 
                         <div className="absolute inset-0 bg-background flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <p className="text-primary font-display text-center text-sm lg:text-lg font-medium px-4">
+                            <p className="text-primary font-atelia text-center text-sm lg:text-lg font-medium px-4">
                                 {item.description}
                             </p>
                         </div>

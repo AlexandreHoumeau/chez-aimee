@@ -13,7 +13,7 @@ export function PinkSection() {
                     <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
                         {SERVICES.map((service, index) => (
                             <div key={index} className="text-left">
-                                <h3 className="mb-4 font-display text-lg font-semibold">{service.title}</h3>
+                                <h3 className="mb-4 font-atelia text-3xl">{service.title}</h3>
                                 <p className="text-base leading-relaxed">{service.description}</p>
                             </div>
                         ))}
